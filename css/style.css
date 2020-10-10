@@ -71,7 +71,6 @@
     color: #fff;
 }
 .bottom_title{
-    bottom: 1%;
     width: 100%;
     font-size: 30px;
     color: #fff;
@@ -109,6 +108,10 @@
     .title{
         font-size: 58px;
     }
+    .title>span{
+        position: relative;
+        bottom: 20px;
+    }
     .name_text{
         font-size: 28px;
         top: 65%;
@@ -119,5 +122,25 @@
     }
     .bottom_title{
         font-size: 23px;
+    }
+}
+@media(max-width: 414px){
+    .title{
+        font-size: 50px;
+    }
+    .title>span{
+        position: relative;
+        bottom: 16px;
+    }
+    .name_text{
+        font-size: 23px;
+        top: 67%;
+    }
+    .name_text span{
+        font-size: 20px;
+    }
+    .bottom_title{
+        font-size: 21px;
+        top: 75%;
     }
 }
