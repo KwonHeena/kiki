@@ -83,10 +83,7 @@
     color: #fff;
     position: relative;
     top: 73%;
-<<<<<<< HEAD
     overflow: hidden;
-=======
->>>>>>> e3466fe0a470c811e9a31da744108a2181c07428
 }
 
 @media(max-width: 767px){
@@ -153,7 +150,6 @@
     .bottom_title{
         font-size: 21px;
         top: 75%;
-<<<<<<< HEAD
     }
 }
 /* section01 end */
@@ -219,8 +215,6 @@
     .sec02-text{
         font-size: 18px;
         line-height: 32px;
-=======
->>>>>>> e3466fe0a470c811e9a31da744108a2181c07428
     }
 } 
 /* section02 end */
