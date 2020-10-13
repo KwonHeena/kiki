@@ -25,31 +25,32 @@
 .s-core{
     font-family: 'S-CoreDream-5Medium';
 }
+
 .background{
     background: url(../images/section01-background.jpg) no-repeat center;
     background-size: cover;
     width: 100%;
-    height: 1100px;
+    height: 150vh;
     position: relative;
     overflow: hidden;
 }
 .top_title{
     color: #fff;
-    line-height: 43px;
-    font-size: 30px;
+    line-height: 58px;
+    font-size: 40px;
     text-shadow: 0 3px 8px  #000, 0 2px 6px #000;
-    padding-top: 50px;
+    padding-top: 4%;
 }
 .name_text{
     color: #6eb0e7;
-    font-size: 40px;
+    font-size: 42px;
     width: 100%;
     position: relative;
-    top: 59%;
-    left: 12%;
+    top: 55%;
+    left: 16%;
 }
 .name_text span{
-    font-size: 33px;
+    font-size: 35px;
     color: #fff;
 }
 .title{
@@ -58,31 +59,22 @@
     right: 0;
     bottom: 8%;
     width: 100%;
-    font-size: 120px;
+    font-size: 160px;
     color: #d6123a;
     text-shadow: 0 3px 8px  #fff, 0 2px 8px #fff;
     font-style: oblique;
 }
 .title>span{
     position: relative;
-    bottom: 26px;
+    bottom: 30px;
     overflow: hidden;
-}
-.bottom-title{
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 1%;
-    width: 100%;
-    font-size: 27px;
-    color: #fff;
 }
 .bottom_title{
     width: 100%;
-    font-size: 30px;
+    font-size: 35px;
     color: #fff;
     position: relative;
-    top: 73%;
+    top: 72%;
     overflow: hidden;
 }
 
@@ -169,12 +161,12 @@
     width: 100%;
 }
 .heart img{
-    width: 60%;
+    width: 50%;
 }
 .sec02-kiki{
     width: 20%;
     position: absolute;
-    right: 14%;
+    right: 18%;
     top: 4%;
     overflow: hidden;
 }
@@ -187,8 +179,8 @@
     left: 0;
     right: 0;
     color: #fff;
-    font-size: 25px;
-    line-height: 43px;
+    font-size: 28px;
+    line-height: 50px;
     font-family: 'S-CoreDream-3Light';
 }
 
@@ -216,7 +208,16 @@
         font-size: 18px;
         line-height: 32px;
     }
-} 
+}
+@media(max-width: 414px){
+    .heart img{
+        width: 90%;
+    }
+    .sec02-text{
+        font-size: 18px;
+        line-height: 41px;
+    }
+}
 /* section02 end */
 
 /* section03 start */
@@ -225,18 +226,17 @@
     background-size: cover;
     width: 100%;
     height: auto;
-    padding-bottom: 40%;
+    padding-bottom: 33%;
     padding-top: 3%;
     position: relative;
     overflow: hidden;
-    z-index: -99;
 }
 .cloud{
     width: 100%;
     height: 100%;
     position: absolute;
     overflow: hidden;
-    z-index: -98;
+    top: 0;
 }
 .cloud img{
     width: 100%;
@@ -244,25 +244,24 @@
 }
 .sec02-img{
     width: 100%;
-    z-index: 99;
 }
 .sec02-img img{
-    width: 70%;
-    z-index: 99;
+    width: 60%;
+    z-
 }
 .sec03-text{
     position: absolute;
     overflow: hidden;
     left: 0;
     right: 0;
-    top: 55%;
+    top: 54%;
     color: #fff;
     font-family: 'S-CoreDream-3Light';
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 25px;
+    line-height: 40px;
 }
 .sec03-text p{
-    padding: 7px 0;
+    padding: 9px 0;
 }
 @media(max-width:767px){
     .sec03-bg{
@@ -293,4 +292,99 @@
         padding: 3px;
     }
 
+}
+/* section03 end */
+
+/* section04 start */
+.sec04-bg{
+    background: url(../images/sec02-bg.jpg) no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.sec04-text{
+    font-size: 35px;
+    color: #fff;
+    font-family: 'S-CoreDream-5Medium';
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding-top: 3%
+}
+.film{
+    width: 67%;
+    left: 0;
+    right: 0;
+}
+.film img{
+    width: 100%;
+}
+.sec04-kiki img{
+    width: 12%; 
+    position: absolute;
+    left: -45%;
+    top: 1%;
+    right: 0;
+}
+.vedio{
+    position: absolute;
+    padding: 10% 0;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+}
+.video-bg{
+    position: absolute;
+    width: 100%;
+    top: 21%;
+}
+.video-bg video{
+    width: 60%;
+}
+
+@media(max-width: 767px){
+    .sec04-bg{
+        height: 80vh;
+    }
+    .sec04-text{
+        font-size: 30px;
+        padding-top: 8%
+    }
+    .vedio{
+        padding: 20% 0;
+    }
+    .video-bg{
+        top: 26.8%;
+    }
+    .film{
+        width: 80%;
+    }
+    .video-bg video{
+        width: 70%;
+    }
+    .sec04-kiki img{
+        width: 15%; 
+        top: 10%;
+    }
+}
+@media(max-width: 500px){
+    .sec04-bg{
+        height: 50vh;
+    }
+    .sec04-text{
+        font-size: 25px;
+        padding-top: 10%
+    }
+    .vedio{
+        padding: 25% 0;
+    }
+    .sec04-kiki img{
+        width: 17%; 
+        top: 12.5%;
+    }
+    .video-bg{
+        top: 29.5%;
+    }
 }
