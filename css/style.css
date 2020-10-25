@@ -50,8 +50,8 @@ html,body{
     font-size: 42px;
     width: 100%;
     position: relative;
-    top: 55%;
-    left: 16%;
+    top: 56%;
+    left: 20%;
 }
 .name_text span{
     font-size: 35px;
@@ -61,7 +61,7 @@ html,body{
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 8%;
+    bottom: 10%;
     width: 100%;
     font-size: 160px;
     color: #d6123a;
@@ -83,14 +83,18 @@ html,body{
 }
 
 @media(max-width: 767px){
+    .background{
+        height: 100vh;
+        padding: 5% 0;
+    }
     .title{
-        bottom: 11%;
+        bottom: 10%;
         font-size: 85px;
         padding: 20px 0;
     }
     .name_text{
         font-size: 32px;
-        top: 61%;
+        top: 55%;
         left: 8%;
     }
     .name_text span{
@@ -99,15 +103,13 @@ html,body{
     }
     .bottom_title{
         font-size: 27px;
+        top: 68%;
     }
 }
 @media(max-width: 500px){
-    .background{
-        height: 100vh;
-    }
     .title{
-        bottom: 5%;
-        font-size: 85px;
+        bottom: 9%;
+        font-size: 80px;
     }
     .container{
         padding: 0 0;
@@ -134,14 +136,15 @@ html,body{
     }
     .bottom_title{
         font-size: 23px;
+        top: 73%;
     }
 }
-@media(max-width: 414px){
+@media(max-width: 415px){
     .background{
         height: 90vh;
     }
     .title{
-        bottom: 7%;
+        bottom: 8%;
         font-size: 50px;
     }
     .title>span{
@@ -157,7 +160,7 @@ html,body{
     }
     .bottom_title{
         font-size: 21px;
-        top: 67%;
+        top: 68%;
     }
 }
 /* section01 end */
@@ -306,120 +309,93 @@ html,body{
 /* section03 end */
 
 /* section04 start */
-.sec04-bg{
+#section04{
     background: url(../images/sec02-bg.jpg) no-repeat;
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-size: cover;
-    position: relative;
     overflow: hidden;
+    position: relative;
+    padding-bottom: 5%;
 }
 .sec04-text{
-    font-size: 35px;
+    font-size: 45px;
     color: #fff;
     font-family: 'S-CoreDream-5Medium';
+    position: relative;
+    top: 80px;
+    padding-top: 1%;
+}
+.film{
+    width: 100%;
+    position: relative;
+}
+.film img{
+    width: 60%;
+}
+.video-bg video{
+    width: 52%;
     position: absolute;
     left: 0;
     right: 0;
-    padding-top: 3%
+    bottom: 14.8%;
 }
-.film{
-    width: 67%;
-    left: 0;
-    right: 0;
-}
-.film img{
+.sec04-kiki{
     width: 100%;
 }
 .sec04-kiki img{
-    width: 12%; 
-    position: absolute;
-    left: -45%;
-    top: 1%;
-    right: 0;
-}
-.vedio{
-    position: absolute;
-    padding: 10% 0;
-    overflow: hidden;
-    left: 0;
-    right: 0;
-}
-.video-bg{
-    position: absolute;
-    width: 100%;
-    top: 21%;
-}
-.video-bg video{
-    width: 60%;
+    width: 10%;
+    margin-right: 45%;
 }
 
-@media(max-width: 767px){
-    .sec04-bg{
-        height: 80vh;
+@media(max-width: 768px){
+    #section04{
+        padding-bottom: 13%;
+        padding-top: 2%;
     }
     .sec04-text{
-        font-size: 30px;
-        padding-top: 8%
+        font-size: 32px;
+        top: 45px;
+        padding-top: 2%;
     }
-    .vedio{
-        padding: 20% 0;
-    }
-    .video-bg{
-        top: 26.8%;
-    }
-    .film{
-        width: 80%;
+    .film img{
+        width: 100%;
     }
     .video-bg video{
-        width: 70%;
+        width: 87%;
+        bottom: 18%;
     }
     .sec04-kiki img{
-        width: 15%; 
-        top: 10%;
+        width: 17%;
+        margin-right: 60%;
     }
 }
 @media(max-width: 500px){
-    .sec04-bg{
-        height: 50vh;
+    #section04{
+        padding-bottom: 15%;
     }
     .sec04-text{
-        font-size: 25px;
-        padding-top: 10%
-    }
-    .vedio{
-        padding: 25% 0;
-    }
-    .sec04-kiki img{
-        width: 17%; 
-        top: 12.5%;
-    }
-    .video-bg{
-        top: 27.7%;
+        font-size: 28px;
     }
     .video-bg video{
-        width: 85%;
-    }
-    .film{
-        width: 100%;
+        width: 87%;
+        bottom: 18.5%;
     }
     .sec04-kiki img{
-        width: 25%; 
-        top: 5%;
-        left: -60%;
+        width: 20%;
     }
 }
-/* section04 end */
 
 /* section05 start */
 .sec05-bg{
     background-image: url(../images/section05-bg.jpg);
     width: 100%;
-    height: 3000px;
+    height: auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #086a94;
     background-position: bottom center;
+    padding: 5% 0 70% 0;
 }
 .sec05-bg .sec05-title{
     width: 45%;
@@ -438,8 +414,8 @@ html,body{
     padding-bottom: 3%;;
 }
 .event-inner{
-    width: 60%;
-    height: 1650px;
+    width: 70%;
+    height: auto;
     background: #fff;
     border-radius: 40px;
     overflow: hidden;
@@ -511,7 +487,7 @@ html,body{
     color: #000;
     font-size: 30px;
     font-family: 'ghanachoco';
-    padding-top: 40px;
+    padding-top: 45px;
 }
 .event-3 img{
     width: 50%;
@@ -519,12 +495,13 @@ html,body{
 .event-3 .col-sm-6{
     position: relative;
     bottom: 20px;
+    padding-top: 2%;
 }
 .event-3 .movie{
-    padding-top: 50px;
+    padding-top: 13%;
 }
 .event-3 .movie-text{
-    padding-top: 71px;
+    padding-top: 80px;
 }
 .event-3{
     position: relative;
@@ -554,13 +531,11 @@ html,body{
     width: 20%;
     margin: 0 20px;
 }
-
 .sec05-bottom-text{
     background: #6797ac;
     width: 100%;
-    height: 200px;
+    height: 170px;
     position: relative;
-    bottom: 40px;
 }
 .sec05-bottom-text p{
     color: #000;
@@ -570,7 +545,11 @@ html,body{
     top: 25px;
 }
 
-@media(max-width: 767px){
+@media(max-width: 768px){
+    .sec05-bg{
+        background-size: contain;
+        padding: 5% 0 55% 0;
+    }
     .sec05-bg .sec05-title{
         width: 65%;
     }
@@ -585,7 +564,120 @@ html,body{
         width: 90%;
     }
     .event-3 img{
-        width: 20%;
+        width: 75%;
     }
-
+    .event-img{
+        display: flex;
+    }
+    .event-3 .col-sm-6{
+        bottom: 20px;
+        padding-top: 3%;
+    }
+    .event-3 .movie{
+        padding-top: 10%;
+    }
+    .event-3 .movie-text{
+        padding-top: 28.5%;
+    }
+    .sec05-bottom-text p{
+        font-size: 13px;  
+    }
+    .event-1 .event1{
+        font-size: 35px;
+    }
+    .event-2 .event2{
+        font-size: 35px;
+    }
+    .event-3 .event3{
+        font-size: 35px;
+    }
+    .step1 .span {
+        font-size: 25px;
+    }
+    .step2 .span {
+        font-size: 25px;
+    }
+    .step01 p{
+        font-size: 25px;
+        padding-bottom: 28px;
+    }
+    .step01 .event2-text1{
+        font-size: 25px;
+    }
+    .step01 .event2-text2{
+        font-size: 25px;
+    }
+    .icon p{
+        font-size: 20px;
+    }
+}
+@media(max-width:500px){
+    .sec05-bg .sec05-title{
+        padding-bottom: 4%;
+    }
+    .sec05-bg p{
+        font-size: 20px;
+    }
+    .event-1 .event1{
+        font-size: 28px;
+    }
+    .event-2 .event2{
+        font-size: 28px;
+    }
+    .event-3 .event3{
+        font-size: 28px;
+    }
+    .step1 .span {
+        font-size: 20px;
+    }
+    .step2 .span {
+        font-size: 20px;
+    }
+    .step01 p{
+        font-size: 20px;
+    }
+    .step01 .event2-text1{
+        font-size: 20px;
+    }
+    .step01 .event2-text2{
+        font-size: 20px;
+    }
+    .icon p{
+        font-size: 14px;
+    }
+    .event-3 .col-sm-6{
+        bottom: 20px;
+        padding-top: 4%;
+    }
+    .event-3 .movie{
+        padding-top: 10%;
+    }
+    .event-3 .movie-text{
+        padding-top: 32%;
+    }
+    .event-3 p{
+        font-size: 16px;
+        padding-top: 19px;
+    }
+    .icon div img{
+        width: 50%;
+    }
+    .sec05-bottom-text{
+        height: 200px;
+    }
+    .sec05-bottom-text p{
+        color: #000;
+        font-size: 12px;
+        padding: 0 20px 0 20px;
+        position: relative;
+        top: 25px;
+    }
+}
+@media(max-width: 415px){
+    .sec05-bottom-text{
+        height: 190px;
+    }
+    .sec05-bottom-text p{
+        font-size: 11px;
+    }
 }
