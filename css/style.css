@@ -687,6 +687,9 @@ html,body{
         padding-top: 15%;
     }
     .event-3 .movie-text{
-        padding-top: 28%;
+        padding-top: 29%;
+    }
+    .icon p{
+        font-size: 12px;
     }
 }
