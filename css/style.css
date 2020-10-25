@@ -647,13 +647,13 @@ html,body{
     }
     .event-3 .col-sm-6{
         bottom: 20px;
-        padding-top: 4%;
+        padding-top: 5%;
     }
     .event-3 .movie{
-        padding-top: 10%;
+        padding-top: 15%;
     }
     .event-3 .movie-text{
-        padding-top: 32%;
+        padding-top: 27%;
     }
     .event-3 p{
         font-size: 16px;
@@ -679,5 +679,14 @@ html,body{
     }
     .sec05-bottom-text p{
         font-size: 11px;
+    }
+    .event-3 .col-sm-6{
+        padding-top: 6%;
+    }
+    .event-3 .movie{
+        padding-top: 15%;
+    }
+    .event-3 .movie-text{
+        padding-top: 28%;
     }
 }
